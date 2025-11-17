@@ -4,8 +4,8 @@
   --arrowpanel-border-radius: var(--uc-border-radius) !important;
 }
 
-#toolbar-menubar {
-  &[autohide="true"] {
+@media (-moz-platform: windows) {
+  #toolbar-menubar {
     &[inactive]:not([customizing]) {
       width: 0px;
     }
@@ -61,4 +61,8 @@
 #statuspanel #statuspanel-label {
   border: none !important;
   border-radius: var(--uc-border-radius) !important;
+}
+
+#PanelUI-button {
+  display: none !important;
 }
