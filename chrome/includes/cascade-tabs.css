@@ -42,11 +42,11 @@
 /* container tabs indicator */
 #TabsToolbar .tab-context-line {
     margin: 2px var(--container-tabs-indicator-margin) 0
-        var(--container-tabs-indicator-margin) !important;
-    height: 1px !important;
+    var(--container-tabs-indicator-margin) !important;
+  height: 1px !important;
 }
 .tab-context-line {
-    box-shadow: var(--uc-identity-glow) var(--identity-tab-color) !important;
+  box-shadow: var(--uc-identity-glow) var(--identity-tab-color) !important;
 }
 
 /* show favicon when media is playing but tab is hovered */
@@ -153,7 +153,7 @@
 }
 .tab-background {
   margin: 0px !important;
-  border-radius: 0px !important;
+  border-radius: var(--uc-border-radius) var(--uc-border-radius) 6px 6px !important;
 }
 
 /* tab group labels */
@@ -167,7 +167,7 @@
 }
 
 /* hide vertical tabs new tab button, there is also one for overflow */
-#vertical-tabs-newtab-button, #tabs-newtab-button {
+#vertical-tabs-newtab-button {
   display: none !important;
 }
 
@@ -179,3 +179,41 @@ this removes the ability to toggle the "expand sidebar on hover" option that is 
   display: none !important;
 }
 */
+
+
+/* ------------------ */
+#TabsToolbar,
+#toolbar-items,
+#TabsToolbar-customization-target,
+#tabbrowser-tabs,
+.tabbrowser-tab,
+.tab-content,
+.tab-background,
+#nav-bar
+{
+  height: var(--global-height) !important;
+  min-height: var(--global-height) !important;
+}
+
+.tab-label {
+  font-size: var(--tab-font-size) !important;
+}
+
+.tabbrowser-tab {
+  padding: 0 !important;
+}
+
+.titlebar-buttonbox {
+  margin-inline: 10px !important
+}
+
+.tabbrowser-tab::after,
+#nav-bar::after {
+  content: '';
+  position: inherit;
+  right: 0;
+  top: 30%;
+  width: 2px;
+  height: 40%;
+  background: #80808075 !important;
+}

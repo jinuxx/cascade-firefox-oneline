@@ -16,16 +16,16 @@
   box-shadow: none !important;
 }
 
-#urlbar-background {
+.urlbar-background {
   border: transparent !important;
 }
 
-#urlbar[focused="true"] > #urlbar-background,
-#urlbar:not([open]) > #urlbar-background {
+#urlbar[focused="true"] > .urlbar-background,
+#urlbar:not([open]) > .urlbar-background {
   background: var(--toolbar-field-background-color) !important;
 }
 
-#urlbar[open] > #urlbar-background {
+#urlbar[open] > .urlbar-background {
   background: var(--toolbar-field-background-color) !important;
 }
 
@@ -40,4 +40,10 @@
 }
 .urlbar-page-action {
   padding: 0 inherit !important;
+}
+
+/* ------------------ */
+/* 地址栏在最左边，把最左边的一点点margin去掉 */
+#urlbar-container {
+  margin-left: 0 !important;
 }

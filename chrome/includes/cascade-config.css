@@ -17,7 +17,7 @@
 
 /* remove window control buttons */
 .titlebar-buttonbox-container {
-  display: none !important;
+  order: 2 !important;
 }
 
 #pageActionButton {
@@ -71,8 +71,11 @@
    *  If enabled the max-width is applied on focus
    *  otherwise the URL Bar will always be it's min-width
    */
-  --uc-urlbar-min-width: 35vw;
-  --uc-urlbar-max-width: 35vw;
+  --uc-urlbar-min-width: 25vw;
+  --uc-urlbar-max-width: 25vw;
+
+  --tab-font-size: 12px;
+  --global-height: 35px;
 
   /*  Position of the URL Bar
    *  possible values:
@@ -95,7 +98,7 @@
 }
 
 /* Disables the Tracking Protection Shield */
-/* #tracking-protection-icon-container { display: none !important; } */
+#tracking-protection-icon-container { display: none !important; }
 
 /* Encryption and Permissions icons */
 /* Only hides permission items */
@@ -128,7 +131,7 @@
   /*  Allow tabs to have dynamic widths based on
    *  the Tab Bars maximum width
    */
-  --uc-active-tab-width: clamp(100px, 30vw, 300px);
+  --uc-active-tab-width: clamp(100px, 23vw, 230px);
   --uc-inactive-tab-width: clamp(100px, 20vw, 200px);
 
   /*  Enable this to always show the Tab Close button
@@ -143,7 +146,7 @@
    *  show: -moz-inline-block
    *  hide: none
    */
-  --show-tab-close-button-hover: none;
+  --show-tab-close-button-hover: -moz-inline-block;
 
   /*  Hide the all Tabs button from the Tab Bar
    *  possible values:
