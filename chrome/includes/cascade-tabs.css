@@ -148,12 +148,14 @@
 
 /* selected tab colour fix */
 .tabbrowser-tab[selected] .tab-background {
-  background-color: var(--uc-highlight-colour) !important;
+  background-color: var(--tab-selected-bgcolor) !important;
+  border-bottom: 1px solid lightgray;
+  border-top: 2px solid lightgray;
   outline: none !important;
 }
 .tab-background {
   margin: 0px !important;
-  border-radius: var(--uc-border-radius) var(--uc-border-radius) 6px 6px !important;
+  border-radius: var(--uc-border-radius) !important;
 }
 
 /* tab group labels */

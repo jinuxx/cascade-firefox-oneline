@@ -45,5 +45,10 @@
 /* ------------------ */
 /* 地址栏在最左边，把最左边的一点点margin去掉 */
 #urlbar-container {
-  margin-left: 0 !important;
+  margin-left: 3px !important;
+}
+
+#urlbar:not([open])  {
+  min-height: 25px !important;
+  max-height: 25px !important;
 }
