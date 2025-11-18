@@ -67,3 +67,7 @@
 #nav-bar-overflow-button {
   display: none !important;
 }
+
+#personal-bookmarks {
+  border-bottom: 1px solid lightgray;
+}
