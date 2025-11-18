@@ -64,7 +64,8 @@
 }
 
 #PanelUI-button,
-#nav-bar-overflow-button {
+#nav-bar-overflow-button,
+#taskbar-tabs-button {
   display: none !important;
 }
 
