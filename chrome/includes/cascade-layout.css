@@ -12,6 +12,16 @@
   }
 }
 
+@media (-moz-platform: linux) {
+  #toolbar-menubar {
+    &[inactive]:not([customizing]) {
+      width: 0px;
+    }
+  }
+}
+
+
+
 #main-window,
 #toolbar-menubar,
 #TabsToolbar,
