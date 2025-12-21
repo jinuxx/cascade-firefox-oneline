@@ -18,6 +18,9 @@
       width: 0px;
     }
   }
+  toolbarspring {
+    max-width: 5px !important;
+  }
 }
 
 
